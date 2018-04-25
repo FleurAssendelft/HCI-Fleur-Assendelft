@@ -28,12 +28,18 @@ h2{
 	font-family: 'Lustria', serif;
 	font-size: 18px;
 	text-align: center;
+	margin: 0px;
 }
 
 h3{
 	font-family: 'Khula', sans-serif;
 	text-transform: uppercase;
 	margin: 0px;
+}
+
+h4{
+	margin: 0px;
+	margin-top: 2%;
 }
 
 p{
@@ -66,7 +72,7 @@ a#nav:hover{
 paragraaf
 ------------------------------------------------------------------- */
 
-#over, #werk, #tool, #fotografie{
+#over, #topic, #workshop, #excurtion, #labweek{
 	margin: 0px;
 	text-align: inherit;
 }
@@ -74,11 +80,13 @@ paragraaf
 /* -------------------------------------------------------------------
 kopjes 
 ------------------------------------------------------------------- */
-.informatie, .projecten, .tools,  .fotografie{
+.informatie, .workshop, .excurtion, .topic,  .labweek{
 	background-color: rgba(255,255,255, 0.5);
 	padding: 2%;
 	margin-bottom: 2%;
 }
+
+
 
 
 /* -------------------------------------------------------------------
@@ -94,6 +102,30 @@ over mij
 	display: flex;
 }
 
+#tekst{
+	padding-left: 2%;
+}
+
+
+/* -------------------------------------------------------------------
+topic
+------------------------------------------------------------------- */
+.topic{
+	text-align: center;
+}
+
+.topics{
+	padding: 2%;
+	background-color: red;
+	margin-bottom: 2%;
+}
+
+p{
+	margin: 0px;
+}
+
+
+
 
 /* -------------------------------------------------------------------
 tools
@@ -102,10 +134,6 @@ tools
 	width: 50%;
 }
 
-.tools{
-	display: flex;
-	flex-wrap: wrap;
-}
 
 /* -------------------------------------------------------------------
 kopjes 
@@ -153,6 +181,10 @@ iframe{
 	height: 75vh;
 }
 
+
+/* -------------------------------------------------------------------
+media queries
+------------------------------------------------------------------- */
 @media only screen and (min-width: 500px) {
 
 	li{
