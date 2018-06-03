@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lustria');
 @import url('https://fonts.googleapis.com/css?family=Khula:300');
 @import url('https://fonts.googleapis.com/css?family=Khula:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body{
 	background-image: url("../afbeeldingen/golven.jpeg");
@@ -33,17 +34,13 @@ h2{
 
 h3{
 	font-family: 'Khula', sans-serif;
-	text-transform: uppercase;
 	margin: 0px;
 }
 
-h4{
-	margin: 0px;
-	margin-top: 2%;
-}
+
 
 p{
-	font-family: 'Khula', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* -------------------------------------------------------------------
@@ -67,6 +64,33 @@ a#nav:hover{
 	color: rgb(0, 153, 255);
 	transition: 0.2s ease-in-out;
 }
+/* -------------------------------------------------------------------
+head
+------------------------------------------------------------------- */
+.head{
+	display: flex;
+    flex-direction: row;
+}
+.back{
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 5%;
+	font-size: 50px;
+	width: 10%;
+}
+
+#pijl{
+	text-decoration: none;
+	color: black;
+}
+
+#pijl:hover{
+	color: pink;
+}
+
+.naam{
+	width: 80%
+}
 
 /* -------------------------------------------------------------------
 paragraaf
@@ -75,6 +99,18 @@ paragraaf
 #over, #topic, #workshop, #excurtion, #labweek{
 	margin: 0px;
 	text-align: inherit;
+}
+
+.tekst{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	background-color: rgba(255,255,255, 0.8);
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	margin-top: 1%;
+
 }
 
 /* -------------------------------------------------------------------
@@ -100,17 +136,19 @@ over mij
 
 .informatie{
 	display: flex;
+	flex-direction: column;
 }
 
 #tekst{
 	padding-left: 2%;
+	text-align: justify;
 }
 
 
 /* -------------------------------------------------------------------
 topic
 ------------------------------------------------------------------- */
-.topic{
+/*.topic{
 	text-align: center;
 }
 
@@ -122,8 +160,26 @@ topic
 
 p{
 	margin: 0px;
+}*/
+
+.keuze{
+	background-color: rgba(255,255,255, 0.8);
+	text-align: center;
+	margin: 1%;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 
+a:hover{
+	color: pink;
+}
+
+.eerste, .tweede{
+	display: flex;
+	flex-direction: column;
+}
 
 
 
@@ -209,14 +265,28 @@ media queries
 }
 
 @media only screen and (min-width: 725px) {
-
+	.eerste, .tweede{
+		display: flex;
+		flex-direction: row;
 	}
+
+	.informatie{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.keuze{
+		width: 50%;
+	}
+}
 
 @media only screen and (min-width: 1032px) {
 	.navigatie{
 		padding: 0.25%;
 	}
-	}
+
+
+}
 
 
 
