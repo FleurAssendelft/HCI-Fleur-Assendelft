@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Portfolio Fleur Assendelft</title>
+</head>
+<body>
+
+	<div class="page">
+		<div class="navigatie">
+			<li><a id="nav" href="../index.html"> Over </a></li>
+			<li><a id="nav" href="../topics/topics.html"> Topic </a></li>	
+			<li><a id="nav" href="../workshop/workshop.html"> Workshop </a></li>
+			<li><a id="nav" href="../excursion/excursion.html"> Excurtion </a></li>
+			<li><a id="nav" href="../labweek/labweek.html"> Labweek </a></li>
+		</div>
+
+		<div class="head">
+			<div class="back">
+				<a id="pijl" href="labweek.html">&larr;</a>
+			</div>
+			<div class="naam">
+				<h1>Dag 6 | maandag 11 juni</h1>
+				<h2>bouwen</h2>
+			</div>
+		</div>
+
+		<div class="tekst">
+			Vandaag gingen we weer verder met het maken van de kapstok. We hadden alle benodigdheden om ze zagen etc.  We hebben de gaten voor de lichtjes gemaakt en de gaten voor de sloten. Gezamenlijk hebben we besloten hoe we de sloten precies gaan doen. Hani heeft dit uitgewerkt in code met Arduino.
+			<br><br>
+			Sanne en ik zijn vandaag op pad gegaan om verf te halen, zodat we het een mooie kleur kunnen geven. We zijn er namelijk ook gezamenlijk uit hoe het logo eruit komt te zien op de kapstok zelf en op de NFC-chip. We hebben ook scharnieren gehaald, zodat we makkelijk de binnenkant kunnen bereiken en zo alle elektronica erin kunnen stoppen en verbergen. Als we alles al vastmaken, gaat dat niet.			
+			<br><br>
+			We hebben de gehele kapstok geverfd in het blauw en we gaan morgen het logo in het wit erop spuiten. Zo is het duidelijk dat het wearable bij de kapstok hoort 
+
+			Nu we het geverfd hebben zetten we het morgen in elkaar en kunnen we alle elektronica aansluiten en het Arduino board + Bread board aan elkaar maken. 
+
+			<br><br>
+			<img id="tower" src="afbeeldingen/verfen.jpg">
+			<img id="tower" src="afbeeldingen/schuren.jpg">
+			<img id="tower" src="afbeeldingen/verfen2.jpg">
+		</div>
+
+	
+
+
+		<div class="footer">
+			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/fleur-assendelft-0b4103153/" TARGET="_blank" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/fleurassendelft/" TARGET="_blank" class="fa fa-instagram"></a>
+			<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
+			<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+</body>
+</html>

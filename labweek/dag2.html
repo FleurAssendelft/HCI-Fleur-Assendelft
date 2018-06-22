@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Portfolio Fleur Assendelft</title>
+</head>
+<body>
+
+	<div class="page">
+		<div class="navigatie">
+			<li><a id="nav" href="../index.html"> Over </a></li>
+			<li><a id="nav" href="../topics/topics.html"> Topic </a></li>	
+			<li><a id="nav" href="../workshop/workshop.html"> Workshop </a></li>
+			<li><a id="nav" href="../excursion/excursion.html"> Excurtion </a></li>
+			<li><a id="nav" href="../labweek/labweek.html"> Labweek </a></li>
+		</div>
+
+		<div class="head">
+			<div class="back">
+				<a id="pijl" href="labweek.html">&larr;</a>
+			</div>
+			<div class="naam">
+				<h1>Dag 2 | dinsdag 5 juni</h1>
+				<h2>concepten bedenken & prototype</h2>
+			</div>
+		</div>
+
+		<div class="tekst">
+			Vandaag was de tweede dag van de HCI week in Zoetermeer. We begonnen de ochtend met een brainstormsessie. We hadden de smaak goed te pakken en hebben allerlei originele ideeën bedacht. Omdat al deze ideeën zo goed zijn hebben wij besloten om te gaan stemmen voor het beste idee. Het idee met de meeste stemmen gaan we uitvoeren. Uiteindelijk kwamen we met het idee van de tattoo stempel in de club.
+			<br><br>
+			
+			Als je naar een feestje gaat heb je allerlei dingen in je zakken om de avond te ‘overleven’. Je mobiel om foto’s te maken en je vrienden te vinden, maar daarnaast ook je bankpasje, id kaart et cetera. Daarnaast wil je ook graag je jas ophangen en daarvan krijg je nog iets dat je in je zakken moet stoppen om het niet kwijt te raken.
+			<br><br>
+			Hierop hebben wij een idee bedacht. Als al deze informatie op een tattoo zou zitten, hoef je dit niet mee te slepen de hele avond. Je hebt dan alleen nog je telefoon waarmee je foto’s kan maken en je tattoo waar alle informatie op staat. Bij de ingang krijg je een tattoo en daarop zet je je garderobe nummer door deze tattoo
+			
+			<br><br>
+			<img id="tower" src="afbeeldingen/to-do.jpeg">
+			<br><br>
+			Ik heb mij vandaag vooral beziggehouden met het concept bedenken. Nadat wij het concept hadden verzonnen zijn we uit gaan zoeken wat wij hier voor nodig hebben. Ik heb onderzocht wat een NCF-chip precies is en wat het inhoud. Ook ben ik erachter gekomen in wat voor soorten deze chip voorkomt en waar het allemaal in zit. Je telefoon kan deze chips lezen, maar wij willen het toch met het arduino bord doen, omdat dat veel technischer is en je zelf kunt aanpassen.
+			<br><br>
+			 <video width="400" controls>
+				<source ' src="afbeeldingen/prototype-1.mp4" type="video/mp4">
+			</video> 
+			<br><br>
+			Wij hebben een prototype gemaakt met karton. Hierbij hebben wij 3 lampjes en een ultrasonisch sensor(afstand sensor) gebruikt. We wilden hiermee het eerste idee van de garderobe uittesten. Jammer genoeg hebben we de NFC chips en de reader nog niet, dus hebben wij dit geïmproviseerd. De sensor werkt nu even als NFC reader en reageerd al de hand er voor komt. Dan gaat het lichtje bij de kapstok branden waar je de jas op kan hangen. Morgen kunnen we dit idee uitbreiden met de echte sensoren, want die hebben wij vandaag besteld.
+			
+		</div>
+
+	
+
+
+		<div class="footer">
+			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/fleur-assendelft-0b4103153/" TARGET="_blank" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/fleurassendelft/" TARGET="_blank" class="fa fa-instagram"></a>
+			<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
+			<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+</body>
+</html>

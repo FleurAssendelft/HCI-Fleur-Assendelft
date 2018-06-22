@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Portfolio Fleur Assendelft</title>
+</head>
+<body>
+
+	<div class="page">
+		<div class="navigatie">
+			<li><a id="nav" href="../index.html"> Over </a></li>
+			<li><a id="nav" href="../topics/topics.html"> Topic </a></li>	
+			<li><a id="nav" href="../workshop/workshop.html"> Workshop </a></li>
+			<li><a id="nav" href="../excursion/excursion.html"> Excurtion </a></li>
+			<li><a id="nav" href="../labweek/labweek.html"> Labweek </a></li>
+		</div>
+
+		<div class="head">
+			<div class="back">
+				<a id="pijl" href="labweek.html">&larr;</a>
+			</div>
+			<div class="naam">
+				<h1>Dag 4 | donderdag 7 juni</h1>
+				<h2>prototype 1</h2>
+			</div>
+		</div>
+
+		<div class="tekst">
+			Vandaag hadden we voor het eerst een gastspreker. Dit werd gepresenteerd door Vincent van nextempire. Hij is de oprichter en baas van dit bedrijf. Hij maakt producten voor de klant, waarbij de ervaring extreem is. Hij liet bijvoorbeeld iets zien over een app, waar je langzamerhand een masker over je gezicht kreeg en hoe meer dit masker gevormd en hard werd, het uiteindelijk mee ging bewegen met de muziek. Een hele inspirerende presentatie, waar mensen die AR/VR als onderwerp hadden erg veel nieuwe ideeën op konden doen. Helaas gaf het ons geen nieuwe ideeën voor het product wat wij aan het maken zijn. 
+			<br><br>
+			Gister hebben wij dus ‘boodschappen’ gedaan en vandaag ben ik aan de slag gegaan met het uittekenen van de vorm van de kapstok en het zagen hiervan. Ik heb alles precies uitgemeten, alleen het zagen was toch lastiger dan ik dacht. Het was een beetje scheef gegaan, maar dat lossen we later wel op met wat verf. We hadden helaas geen lijm of schroeven mee, dus morgen gaan we het in elkaar zetten en kunnen we verder met het ontwerpen.
+			<br><br>
+			Andere groepsleden zijn ook bezig geweest met het ontwerpen van het slot dat in de kapstok komt. Wij willen het garderobe personeel ook meteen vervangen, maar dat zorgt er voor dat kapstok ook ‘op slot’ moet. Anders worden de jassen alsnog gestolen.		
+			<br><br>
+			<img id="tower" src="afbeeldingen/spreker1.jpg">
+			<img id="tower" src="afbeeldingen/zagen.jpg">
+		</div>
+
+	
+
+
+		<div class="footer">
+			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/fleur-assendelft-0b4103153/" TARGET="_blank" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/fleurassendelft/" TARGET="_blank" class="fa fa-instagram"></a>
+			<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
+			<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+</body>
+</html>

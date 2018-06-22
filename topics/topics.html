@@ -9,13 +9,65 @@
 </head>
 <body>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Over mij</a>
+  <a href="topics/topics.html">Topics</a>
+    <a id="extra" href="topics/exertion-games.html">Exertion gaming</a>
+    <a id="extra" href="topics/ar-vr.html">AR & VR</a>
+    <a id="extra" href="topics/wearables.html">Wearables</a>
+    <a id="extra" href="topics/artificial-creatures.html">Artificial creatures</a>
+  <a href="workshop/workshop.html">Workshop</a>
+    <a id="extra" href="#">Computer Vision</a>
+    <a id="extra" href="#">Unity</a>
+    <a id="extra" href="#">Mapmapping</a>
+    <a id="extra" href="#">Arduino</a>
+  <a href="excursion/excursion.html">Excursion</a>
+  <a href="labweek/labweek.html">Labweek</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776; <a id="home"> <a> </span>
+</div>
+
+<div class="informatie">
+  <div>
+    <img id="profielfoto" src="afbeeldingen/ik.jpg">
+  </div>
+  <div id="tekst">
+     <b> Hi, mijn naam is Fleur. Ik ben 20 lentes jong en ik woon in Hillegom, een klein dorpje in Zuid-Holland. Ik woon hier met mijn ouders, broer en mijn kat Joris. Door de weeks studeer ik en in het weekend werk ik elke zaterdag in een kaaswinkel in Noordwijkerhout.</b>
+     <br><br>
+
+    Afgelopen twee weken heb ik samen met medestudenten aan een project gewerkt in Zoetermeer. Dit waren twee intensieve weken, maar er is een mooi eindproduct uit gekomen. Als voorbereiding op deze twee weken hebben wij hoorcolleges en werkcolleges gevolgd. Tijdens de HCI week waren er 4 onderwerpen om uit te kiezen. Over deze onderwerpen hebben wij hoorcolleges gehad en verslagen moeten schrijven. Ook hebben wij werkcolleges gevolgd waarin we hebben geoefend met de techologie die we konden toepassen tijdens de twee weken in Zoetermeer.
+
+    <br><br>
+
+    Neem een kijkje op mijn portfolio en naar het product waar ik de afgelopen 2 weken aan heb gewerkt! Aan de linker kant staat het menu waarmee je overal heen kunt navigeren. 
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
 	<div class="page">
 		<div class="navigatie">
-			<li><a id="nav" href="#over"> Over </a></li>
-			<li><a id="nav" href="#topic"> Topic </a></li>	
-			<li><a id="nav" href="#workshop"> Workshop </a></li>
-			<li><a id="nav" href="#excurtion"> Excurtion </a></li>
-			<li><a id="nav" href="#labweek"> Labweek </a></li>
+			<li><a id="nav" href="../index.html"> Over </a></li>
+			<li><a id="nav" href="../topics/topics.html"> Topic </a></li>	
+			<li><a id="nav" href="../workshop/workshop.html"> Workshop </a></li>
+			<li><a id="nav" href="../excursion/excursion.html"> Excurtion </a></li>
+			<li><a id="nav" href="../labweek/labweek.html"> Labweek </a></li>
 		</div>
 
 		<div class="head">

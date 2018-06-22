@@ -79,6 +79,10 @@ head
 	width: 10%;
 }
 
+#tekst{
+	margin-top: 10%;
+}
+
 #pijl{
 	text-decoration: none;
 	color: black;
@@ -277,7 +281,7 @@ media queries
 		text-align: right;
 		position: fixed;
 		width: 98%;
-		margin-top: -10%;
+		margin-top: 0px;
 		padding: 1%;
 
 	}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Portfolio Fleur Assendelft</title>
+</head>
+<body>
+
+	<div class="page">
+		<div class="navigatie">
+			<li><a id="nav" href="../index.html"> Over </a></li>
+			<li><a id="nav" href="../topics/topics.html"> Topic </a></li>	
+			<li><a id="nav" href="../workshop/workshop.html"> Workshop </a></li>
+			<li><a id="nav" href="../excursion/excursion.html"> Excurtion </a></li>
+			<li><a id="nav" href="../labweek/labweek.html"> Labweek </a></li>
+		</div>
+
+		<div class="head">
+			<div class="back">
+				<a id="pijl" href="workshop.html">&larr;</a>
+			</div>
+			<div class="naam">
+				<h1>Processing</h1>
+				<h2>werkcollege 1</h2>
+			</div>
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment 1</h3>
+			<img id="screenshot" src="afbeeldingen/1.png">				
+			<br>
+				Bij deze opdracht worden er veschillende vormen getekent. Het zijn allemaal ellipse(rondjes). de getallen achter de haakjes geven verschillende data weer (x,y, x1, y1). x is het getal op de x-as waar het rondje begint. Het zelfde geld voor y. x1 en y2 zijn de getallen op de as waar het rondje eindigd. Hiermee kun je bepalen hoe breed en lang het rondje wordt. De kleuren heb ik gedaan aan de hand van fill en de rgb code voor de kleuren.
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment 2</h3>
+			<img id="screenshot" src="afbeeldingen/2.png">				
+			<br>
+				Bij deze opdracht moest ik random vormen tekenen. Ik heb er voor gezorgd dat de figuren op bepaalde punten elkaar raken. Dit was nog best lastig. Hierbij heb ik ook weer de punten van de x en y gepakt.
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment 3</h3>
+			<img id="screenshot" src="afbeeldingen/3.png">				
+			<br>
+				Bij deze opdracht veranderd de achtergrond als je over het scherm gaat. Het is een zwart vlak en de muis en het vlak worden dezelfde kleur namate je ervoer heen gaat. het wordt alle kleuren van de regenboog.
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment CV1</h3>
+			<img id="screenshot" src="afbeeldingen/cv1.png">				
+			<br>
+				Bij deze opdracht wordt mijn gezicht herkend en daar omheen een rondje gezet. Het perfect rond krijgen in het midden van je gezicht was nog best lastig. Uiteindelijk was het een klein stukje code wat hier voor zorgde. Namelijk ellipseMode(corner);
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment CV2</h3>
+			<img id="screenshot" src="afbeeldingen/cv2.png">				
+			<br>
+				Bij deze opdracht wordt je gezicht herkend, net als in de vorige odpracht. Ik heb de code aangepast zodat het je neus herend ipv je hele gezicht.
+		</div>
+
+		<div class="tekst">
+			<h3>Assignment CV3</h3>
+			<img id="screenshot" src="afbeeldingen/cv3.png">				
+			<br>
+				Bij deze opdracht heb ik de code een beetje aangepast. Ipv vakjes zijn het nu rondjes als je kleuren detecteerd. Dit vind ik mooier en handiger.
+		</div>
+
+
+
+	
+
+
+		<div class="footer">
+			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/fleur-assendelft-0b4103153/" TARGET="_blank" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/fleurassendelft/" TARGET="_blank" class="fa fa-instagram"></a>
+			<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
+			<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+</body>
+</html>
